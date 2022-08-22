@@ -1,0 +1,18 @@
+[package]
+edition = "2021"
+name = "geoip-cli"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.62"
+clap = { version = "3.2.17", features = ["cargo"] }
+colorful = "0.2.1"
+directories = "4.0.1"
+futures-util = "0.3.23"
+indicatif = "0.17.0"
+maxminddb = "0.23.0"
+reqwest = { version = "0.11.11", features = ["rustls", "stream"] }
+tokio = { version = "1.20.1", features = ["full"] }
+trust-dns-resolver = {version = "0.21.2", features = ["dns-over-https", "dns-over-rustls", "dns-over-https-rustls"]}
