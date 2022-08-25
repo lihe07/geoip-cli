@@ -1,7 +1,12 @@
 [package]
 edition = "2021"
 name = "geoip-cli"
+description = "A command line tool to quickly query the geolocation information of an IP or domain name"
 version = "0.1.0"
+authors = ["He Li"]
+repository = "https://github.com/lihe07/geoip-cli"
+categories = [""]
+keywords = ["geoip", "cli", "ip", "domain", "location", "geolocation", "maxmind"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
