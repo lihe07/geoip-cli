@@ -31,12 +31,12 @@ macro_rules! error {
     }
 }
 
-macro_rules! warn {
-    ($($arg:tt)*) => {
-        print!("{}", colorful::Colorful::yellow("WARN:  "));
-        println!($($arg)*)
-    }
-}
+// macro_rules! warn {
+//     ($($arg:tt)*) => {
+//         print!("{}", colorful::Colorful::yellow("WARN:  "));
+//         println!($($arg)*)
+//     }
+// }
 
 enum Protocol {
     Normal,
@@ -239,7 +239,7 @@ fn get_geo_data<'a, S: AsRef<str>>(ip: S, db: &PathBuf) -> anyhow::Result<GeoDat
         }
     }
     if let Ok(anonymous) = reader.lookup::<geoip2::AnonymousIp>(ip) {
-        // dbg!(anonymous);
+        dbg!(anonymous);
     }
     Ok(data)
 }
